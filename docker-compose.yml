@@ -1,0 +1,12 @@
+version: '3'
+services:
+  # Define the React app service
+  react-app:
+    # Build the Dockerfile located in the current directory (the '.' refers to the context)
+    build: .
+    # Map the container port to the host port, so you can access the app at http://localhost:3000
+    ports:
+      - "3000:3000"
+    # Optionally, add a volume to synchronize code changes between the host and the container during development
+    # volumes:
+    #   - .:/app
