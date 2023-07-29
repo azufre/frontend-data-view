@@ -24,6 +24,8 @@ const Signup = () => {
             type='text'
             id='username'
             name='username'
+            maxLength={15}
+            minLength={6}
             required
           />
         </div>
@@ -42,6 +44,8 @@ const Signup = () => {
             type='password'
             id='password'
             name='password'
+            maxLength={24}
+            minLength={6}
             required
           />
         </div>
